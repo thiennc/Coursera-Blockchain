@@ -166,7 +166,6 @@ public class BlockChain {
         boolean addNewBlock = _blockchain.add(b);
         if (addNewBlock) {
             updateMaxHeightNode();
-            _transPool = transPool;
         }
         return addNewBlock;
     }
